@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatmate Rent Splitter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Chart.js for visualizations -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🏠 Flatmate Rent Splitter</h1>
+        
+        <!-- Input Section -->
+        <div class="input-section">
+            <label>Total Rent ($): <input type="number" id="totalRent"></label>
+            <label>Number of Flatmates: <input type="number" id="numFlatmates"></label>
+            <button onclick="calculateRent()">Calculate</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h2>Results</h2>
+            <div id="results"></div>
+            <canvas id="rentChart"></canvas>
+        </div>
+
+        <!-- Bills Section (Optional) -->
+        <div class="bills-section">
+            <h3>Add Shared Bills</h3>
+            <div id="billsContainer">
+                <div class="bill-entry">
+                    <input type="text" placeholder="Bill name" class="bill-name">
+                    <input type="number" placeholder="Amount ($)" class="bill-amount">
+                </div>
+            </div>
+            <button onclick="addBillField()">+ Add Bill</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
