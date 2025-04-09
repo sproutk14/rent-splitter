@@ -1,0 +1,8 @@
+rent-splitter/
+├── index.html
+├── style.css
+├── script.js
+├── model/ (AI model files)
+│   └── model.json
+│   └── group1-shard1of1.bin
+└── README.md
